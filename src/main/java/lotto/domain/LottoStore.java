@@ -6,7 +6,7 @@ public class LottoStore {
 
     private final static int LOTTO_PRICE_PER_ONE = 1000;
 
-    public static List<Lotto> buy(int price) {
+    public static List<Lotto> buy(int price, List<String>) munualLotto) {
         validatePrice(price);
         LottoGenerator lottoGenerator= LottoGenerator.newInstance();
         int count = (int) Math.floor(price / LOTTO_PRICE_PER_ONE);

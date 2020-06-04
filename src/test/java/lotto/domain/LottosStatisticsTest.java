@@ -10,7 +10,7 @@ import java.util.List;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class LottosStatisticsTest {
-    private final WinningLotto winningLotto = new WinningLotto("1,2,3,4,5,6", 7);
+   /* private final WinningLotto winningLotto = new WinningLotto("1,2,3,4,5,6", 7);
     private final List<Lotto> Lottos = List.of(
             new Lotto(List.of(1, 2, 3, 4, 5, 8)), // 5개 일치, 1500000원
             new Lotto(List.of(1, 2, 3, 9, 10, 8)), // 3개 일치, 5000원
@@ -49,5 +49,5 @@ public class LottosStatisticsTest {
 
         assertThat(statistics.getRateOfReturnAmount())
                 .isEqualTo(totalAmount.divide(BigDecimal.valueOf(buyMoney), 2, RoundingMode.HALF_UP).floatValue());
-    }
+    }*/
 }
