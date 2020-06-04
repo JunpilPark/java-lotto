@@ -1,10 +1,11 @@
 package lotto.domain;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ManualLottoGenerator implements LottoGenerator{
 
-    private ManualLottoMemo manualLottoMemo;
+    private final ManualLottoMemo manualLottoMemo;
 
     public ManualLottoGenerator(ManualLottoMemo manualLottoMemo) {
         this.manualLottoMemo = manualLottoMemo;
@@ -12,7 +13,10 @@ public class ManualLottoGenerator implements LottoGenerator{
 
     @Override
     public List<Lotto> generator() {
-
-        return null;
+        List<Lotto> lottos = new ArrayList<>();
+        for (List<LottoNumber> lottoNumbers : manualLottoMemo.getLottoMemos()) {
+            lottos.add(Lotto.of(lottoNumbers));
+        }
+        return lottos;
     }
 }
