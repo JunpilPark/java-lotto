@@ -9,12 +9,12 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        final int buyPriceAmount = InputView.inputBuyAmount();
+       /* final int buyPriceAmount = InputView.inputBuyAmount();
         List<Lotto> lottosBought = LottoStore.buy(buyPriceAmount);
         OutputView.printBuyLottos(lottosBought);
 
         final String winningNumber = InputView.inputWinningNumber();
-        final int bonus = InputView.inputBonusNumber();
+        final int bonus = InputView.inputBonusNumber();*/
 /*
         final WinningLotto winningLotto = new WinningLotto(winningNumber, bonus);
         LottosStatistics statistics = new LottosStatistics(lottosBought,
